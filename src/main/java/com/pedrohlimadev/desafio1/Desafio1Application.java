@@ -26,6 +26,6 @@ public class Desafio1Application {
         FreteService freteService = new FreteService();
         OrderService orderService = new OrderService(freteService);
 
-        System.out.println("Total a pagar: " + orderService.calcPrice(order));
+        System.out.println("Total a pagar: " + String.format("%.2f", orderService.calcPrice(order)));
     }
 }
